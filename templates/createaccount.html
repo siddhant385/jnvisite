@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+		
+        // Function to check Whether both passwords
+        // is same or not.
+        function checkmobile(form) {
+            mobile = form.mobile.value;
+
+            if (len(mobile) != 10){
+                alert("Please enter correct mobile no");
+                return false;
+            }
+            else{
+                return true;
+            }
+            
+        }
+        function checkPassword(form) {
+            password1 = form.password.value;
+            password2 = form.cpassword.value;
+            mobile = form.mobile.value;
+
+            // If password not entered
+
+            if (password1 == '')
+                alert ("Please enter Password");
+                
+            // If confirm password not entered
+            else if (password2 == '')
+                alert ("Please enter confirm password");
+            
+            
+            // If Not same return False.	
+            else if (password1 != password2)  {
+                alert ("\nPassword did not match: Please try again...")
+                return false;
+            }
+
+            // If same return True.
+            else{
+                alert ("\nPlease Check Your respective Mail Id for confirmation")
+                return true;
+            }
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .form {padding: 10%;
+        padding-left: 30%;
+        padding-right:30%;
+        padding-bottom: 20%;}
+        .style1 {padding: 10%;
+            padding-bottom: 20%;
+        border: 1ch;
+        border-style: dashed;
+        border-color: black;}
+        .style2 {padding: 2%;}
+        .gfg {
+				font-size:40px;
+				color:green;
+				font-weight:bold;
+				text-align:center;
+			}
+		.geeks {
+				font-size:17px;
+				text-align:center;
+				margin-bottom:20px;
+			}
+
+    </style>
+    <title>Apply For Your Account</title>
+</head>
+<body>
+    <h1 align="center">Create your Account</h1>
+    <form align="center" onSubmit = "return checkPassword(this)" onsubmit="return checkmobile()" action="" class="form" method="post">
+        <div class="style1">
+        <div align="center" class="style2">
+            <label>Email:</label>
+            <input  align= "center" name="email" type="email" placeholder="example@gmail.com"></input>
+        </div>
+        <div align="center" class="style2">
+            <label>Name:</label>
+            <input  align= "center" name="name" type="text" placeholder="Your name"></input>
+        </div>
+        <div align="center" class="style2">
+            <label>Mobile No:</label>
+            <input  align= "center" name="mobile" type="text" placeholder="Your name"></input>
+        </div>
+        <div align = "center" class="style2">
+            <label align= "center">Your Password</label>
+            <input align= "center" name="password" type="password" required></input>
+        </div>
+        <div align = "center" class="style2">
+            <label align= "center">Confirm Password</label>
+            <input align= "center" name = "cpassword"type="password" required></input>
+        </div>
+        <div align="center" class="style2">
+            <button type="submit">submit</button>
+        </div>
+        <div align = "center" class="style2">
+            <label align= "center">or</label>
+            <a href="terms" align= "center">Terms and Policy</a>
+        </div>
+        <div align = "center" class="style2">
+            <label align= "center">or</label>
+            <a href="login" align= "center">Login</a>
+        </div>
+    </div>
+    
+    
+</form>
+</body>
+</html>

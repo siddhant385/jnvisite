@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .form {padding: 10%;
+        padding-left: 30%;
+        padding-right:30%;
+        padding-bottom: 20%;}
+        .style1 {padding: 10%;
+            padding-bottom: 20%;
+        border: 1ch;
+        border-style: dashed;
+        border-color: black;}
+        .style2 {padding: 2%;}
+
+    </style>
+    <script>
+        function passwordmatch(){
+            if("{{content}}" == "true"){
+                alert("Your password or email doesn't match please try again");
+            }}
+            
+    </script>
+    <title>Login To Your Account</title>
+</head>
+<body onload="passwordmatch()">
+    <h1 align="center">Login Page</h1>
+    <form align="center" action="" class="form" method="post">
+        <div class="style1">
+        <div align="center" class="style2">
+            <label>Email:</label>
+            <input  align= "center" name = "email" type="email" placeholder="example@gmail.com"></input>
+        </div>
+        <div align = "center" class="style2">
+            <label align= "center">Password</label>
+            <input align= "center" name = "password" type="password" required></input>
+        </div>
+        <div align="center" class="style2">
+            <button type="submit">submit</button>
+        </div>
+        <div align = "center" class="style2">
+            <label align= "center">or</label>
+            <a href="createaccount" align= "center">Apply for Your Account</a>
+        </div>
+    </div>
+    
+    
+</form>
+</body>
+</html>

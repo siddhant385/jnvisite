@@ -1,0 +1,10 @@
+{
+    "params":{
+        "site_name":"JNV Blogging Site",
+        "github_url":"https://www.github.com",
+        "Instagram_url":"https://www.instagram.com/",
+        "Jnv_official_url":"https://www.google.com",
+        "Developer":"Pawan Sahu & Siddhant Sharma",
+        "app":"Jnv Microblogging Site"
+    }
+}
